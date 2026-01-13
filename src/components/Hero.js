@@ -24,7 +24,7 @@ function Hero() {
           
           <div className="buttons">
             <button className="btn-primary">Experiencia</button>
-          <a href="/CV- gabriel.pdf" download className="btn-secondary">
+            <a href="/cv.pdf" download className="btn-secondary">
               Descargar CV 📥
             </a>
           </div>
@@ -48,8 +48,6 @@ function Hero() {
         </svg>
       </button>
 
-      {/* Decoraciones */}
-      <div className="decoration-right">💼</div>
     </section>
   );
 }
