@@ -42,7 +42,7 @@ function About() {
         <div className="about-illustration">
           <div className="illustration-wrapper">
             <img 
-              src="/desarrollador.png" 
+              src="/Desarrollador.png" 
               alt="Desarrollador trabajando" 
               className="developer-img"
             />
