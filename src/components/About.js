@@ -15,17 +15,21 @@ function About() {
           <div className="about-text">
             <p>
               Estudiante de la carrera de Ingeniería de Sistemas 
-              Computacionales que inició el 8vo ciclo en la Universidad 
+              Computacionales que cursa el 9vo ciclo en la Universidad 
               Peruana de Ciencias Aplicadas, perteneciente al tercio 
               superior de mi facultad.
             </p>
             <p>
               Tengo conocimiento intermedio en el dominio de Lenguajes 
               como Python, C#, Java y Visual Code.
+              En el aspecto de Base de datos, domino temas
+              avanzados del SQL Lite, Microsoft SQl y SQL Server. 
             </p>
             <p>
               Soy desarrollador de sitios webs en HTML usando Angular 
-              Studio, React, como ideas de aportaciones.
+              Studio, React, como ideas de aportaciones en proyectos grupales.
+              Asimismo, poseo experiencia como practicante de mi carrera
+              en las empresas de Gm Ingenierios y Consultores como Devdatep.
             </p>
             <p>
               Por otro lado cuento con habilidades de liderazgo, 
