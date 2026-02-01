@@ -10,14 +10,14 @@ function Projects() {
       link: "https://carta-amanecer.vercel.app/"
     },
     {
-      title: "Portafolio",
-      image: "/proyecto-ejemplo.png", // Imagen de ejemplo
-      link: "#"
+      title: "Adaptacion de Kiseki",
+      image: "/Kiseki.png", 
+      link: "https://kiseki-green-gab.vercel.app/"
     },
     {
-      title: "Diseño en Lesid-MI",
-      image: "/proyecto-ejemplo2.png", // Imagen de ejemplo
-      link: "#"
+      title: "Banner proximo Arsenal",
+      image: "/Arsenal.jpg", 
+      link: "https://www.arsenal.com/"
     }
   ];
 
