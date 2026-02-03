@@ -5,17 +5,17 @@ import './Projects.css';
 function Projects() {
   const projects = [
     {
-      title: "Carta Amanecer",
-      image: "/carta.png",
-      link: "https://carta-amanecer.vercel.app/"
+      title: "Trabajo Grupal",
+      image: "/Mirai.png",
+      link: "https://mirai-inc-ihc.github.io/LandingPageDS/public/"
     },
     {
-      title: "Adaptacion de Kiseki",
-      image: "/Kiseki.png", 
-      link: "https://kiseki-green-gab.vercel.app/"
+      title: "Modelo Figma",
+      image: "/Figma.png", 
+      link: "https://www.figma.com/design/nSGhSUWmjXwynFwWIv9ZRJ/Devdatep-Prueba?node-id=0-1&p=f&t=F9LhK8WdM95oL7oD-0"
     },
     {
-      title: "Banner proximo Arsenal",
+      title: "Modelo de Banner proximo Arsenal",
       image: "/Arsenal.jpg", 
       link: "https://www.arsenal.com/"
     }
