@@ -15,7 +15,7 @@ function Projects() {
       link: "https://www.figma.com/design/nSGhSUWmjXwynFwWIv9ZRJ/Devdatep-Prueba?node-id=0-1&p=f&t=F9LhK8WdM95oL7oD-0"
     },
     {
-      title: "Modelo de Banner proximo Arsenal",
+      title: "Modelo de Banner proximo inspirado en el page Arsenal",
       image: "/Arsenal.jpg", 
       link: "https://www.arsenal.com/"
     }
