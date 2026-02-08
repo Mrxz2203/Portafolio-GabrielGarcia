@@ -5,17 +5,17 @@ import './Projects.css';
 function Projects() {
   const projects = [
     {
-      title: "Trabajo Grupal",
+      title: "Trabajo Grupal - Colaboracion",
       image: "/Mirai.png",
       link: "https://mirai-inc-ihc.github.io/LandingPageDS/public/"
     },
     {
-      title: "Modelo Figma",
+      title: "Modelo Figma Discord - Diseño Web",
       image: "/Figma.png", 
       link: "https://www.figma.com/design/nSGhSUWmjXwynFwWIv9ZRJ/Devdatep-Prueba?node-id=0-1&p=f&t=F9LhK8WdM95oL7oD-0"
     },
     {
-      title: "Modelo de Banner proximo inspirado en el page Arsenal",
+      title: "Proximo Banner inspirado en el F.C. Arsenal",
       image: "/Arsenal.jpg", 
       link: "https://www.arsenal.com/"
     }

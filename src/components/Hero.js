@@ -33,7 +33,7 @@ function Hero() {
         {/* Parte derecha - Foto */}
         <div className="image-content">
           <div className="profile-card">
-            <img src="/perfil.jpg" alt="Jarold Gabriel García" className="profile-img" />
+            <img src="/perfil.jpg" alt="Jarold Gabriel García Cartagena" className="profile-img" />
             <div className="tech-badges">
               <span className="badge">Desarrollador Web</span>
             </div>
