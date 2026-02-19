@@ -15,9 +15,9 @@ function Projects() {
       link: "https://www.figma.com/design/nSGhSUWmjXwynFwWIv9ZRJ/Devdatep-Prueba?node-id=0-1&p=f&t=F9LhK8WdM95oL7oD-0"
     },
     {
-      title: "Proximo Banner inspirado en el F.C. Arsenal",
-      image: "/Arsenal.jpg", 
-      link: "https://www.arsenal.com/"
+      title: "Proyecto Grupal - Arquitectura Web (Github)",
+      image: "/DocSeeker.png", 
+      link: "https://github.com/los-telemedicinos/landing_page_telemedicina"
     }
   ];
 
