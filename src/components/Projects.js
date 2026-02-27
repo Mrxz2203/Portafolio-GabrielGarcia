@@ -10,9 +10,9 @@ function Projects() {
       link: "https://mirai-inc-ihc.github.io/LandingPageDS/public/"
     },
     {
-      title: "Modelo Figma Discord - Diseño Web",
-      image: "/Figma.png", 
-      link: "https://www.figma.com/design/nSGhSUWmjXwynFwWIv9ZRJ/Devdatep-Prueba?node-id=0-1&p=f&t=F9LhK8WdM95oL7oD-0"
+      title: " Cartas San Valentin - Frontend",
+      image: "/Kiseki.png", 
+      link: "https://kiseki-green-gab.vercel.app/"
     },
     {
       title: "Proyecto  Arsenal - Frontend",
