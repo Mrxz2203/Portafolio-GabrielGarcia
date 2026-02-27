@@ -15,9 +15,9 @@ function Projects() {
       link: "https://www.figma.com/design/nSGhSUWmjXwynFwWIv9ZRJ/Devdatep-Prueba?node-id=0-1&p=f&t=F9LhK8WdM95oL7oD-0"
     },
     {
-      title: "Proyecto Grupal - Arquitectura Web (Github)",
-      image: "/DocSeeker.png", 
-      link: "https://github.com/los-telemedicinos/landing_page_telemedicina"
+      title: "Proyecto  Arsenal - Frontend",
+      image: "/Arsenal.png", 
+      link: "https://arsenal-front.vercel.app/"
     }
   ];
 
