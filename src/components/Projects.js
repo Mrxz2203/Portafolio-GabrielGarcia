@@ -10,7 +10,7 @@ function Projects() {
       link: "https://mirai-inc-ihc.github.io/LandingPageDS/public/"
     },
     {
-      title: " Cartas San Valentin - Frontend",
+      title: " Carta de San Valentin - Frontend",
       image: "/Kiseki.png", 
       link: "https://kiseki-green-gab.vercel.app/"
     },
