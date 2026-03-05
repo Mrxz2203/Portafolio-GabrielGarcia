@@ -10,9 +10,9 @@ function Projects() {
       link: "https://mirai-inc-ihc.github.io/LandingPageDS/public/"
     },
     {
-      title: " Carta de San Valentin - Frontend",
-      image: "/Kiseki.png", 
-      link: "https://kiseki-green-gab.vercel.app/"
+      title: " Proyecto Personal - Pagina AutoBiografica",
+      image: "/WebPage.png", 
+      link: "https://portafolio-personal-steel-seven.vercel.app/"
     },
     {
       title: "Proyecto  Arsenal - Frontend",
