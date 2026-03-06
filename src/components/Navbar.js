@@ -9,6 +9,8 @@ function Navbar() {
       <nav>
         <a href="#inicio">Inicio</a>
         <a href="#acerca">Acerca de mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
         <a href="#contacto">Contáctame</a>
       </nav>
     </header>
