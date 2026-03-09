@@ -29,7 +29,7 @@ function About() {
               Soy desarrollador de sitios webs en HTML usando Angular 
               Studio, React, como ideas de aportaciones en proyectos grupales.
               Asimismo, poseo experiencia como practicante de mi carrera
-              en las empresas de Gm Ingenierios y Consultores como Devdatep.
+              en la empresa GM Ingenierios y Consultores SAC.
             </p>
             <p>
               Por otro lado cuento con habilidades de liderazgo, 
