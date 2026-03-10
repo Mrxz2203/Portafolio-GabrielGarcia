@@ -10,9 +10,9 @@ function Projects() {
       link: "https://mirai-inc-ihc.github.io/LandingPageDS/public/"
     },
     {
-      title: " Proyecto Personal - Pagina AutoBiografica",
-      image: "/WebPage.png", 
-      link: "https://portafolio-personal-steel-seven.vercel.app/"
+      title: " Proyecto HelpTask",
+      image: "/HelpTask.png", 
+      link: "https://proyecto-task.vercel.app/"
     },
     {
       title: "Proyecto  Arsenal - Frontend",
