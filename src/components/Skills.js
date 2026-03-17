@@ -6,7 +6,7 @@ function Skills() {
   const categories = [
     {
       name: "Frontend",
-      icon: <i className="devicon-react-original colored" style={{ fontSize: '1.6rem' }}></i>,
+      icon: <img src="/frontend.png" alt="frontend" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
         { name: "React",      emoji: "⚛️",  level: "Intermedio", pct: 65 },
         { name: "Angular",    emoji: "🅰️",  level: "Intermedio", pct: 65 },
@@ -15,7 +15,7 @@ function Skills() {
     },
     {
       name: "Backend",
-      icon: <i className="devicon-python-plain colored" style={{ fontSize: '1.6rem' }}></i>,
+      icon: <img src="/backend.png" alt="backend" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
         { name: "Java",   emoji: "☕", level: "Intermedio", pct: 60 },
         { name: "Python", emoji: "🐍", level: "Intermedio", pct: 65 },
