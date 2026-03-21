@@ -5,9 +5,9 @@ import './Projects.css';
 function Projects() {
   const projects = [
     {
-      title: "Trabajo Grupal - Colaboracion",
-      image: "/Mirai.png",
-      link: "https://mirai-inc-ihc.github.io/LandingPageDS/public/"
+      title: "Proyecto Devdatep - Pokeapp",
+      image: "/Pokeapp.png",
+      link: "https://devdatep-prueba-tecnica.vercel.app/"
     },
     {
       title: " Proyecto HelpTask",
