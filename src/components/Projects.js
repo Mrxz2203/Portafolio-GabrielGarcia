@@ -5,7 +5,7 @@ import './Projects.css';
 function Projects() {
   const projects = [
     {
-      title: "Proyecto Devdatep - Pokeapp",
+      title: "Proyecto Pokeapp - Devdatep ",
       image: "/Pokeapp.png",
       link: "https://devdatep-prueba-tecnica.vercel.app/"
     },
@@ -15,9 +15,14 @@ function Projects() {
       link: "https://proyecto-task.vercel.app/"
     },
     {
-      title: "Proyecto  Arsenal - Frontend",
+      title: "Proyecto  Arsenal - Only Frontend",
       image: "/Arsenal.png", 
       link: "https://arsenal-front.vercel.app/"
+    },
+    {
+      title: "Proyecto Filmi",  
+      image: "/Filmi.png",       
+      link: "https://proyecto-filmi.vercel.app/" 
     }
   ];
 
