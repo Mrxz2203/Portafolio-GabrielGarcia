@@ -32,7 +32,7 @@ function Skills() {
       ],
     },
     {
-      name: "Herramientas",
+      name: "Herramientas de Microsoft Office",
       icon: <img src="/excel.png" alt="excel" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
         { name: "Excel",      emoji: "📊", level: "Avanzado",   pct: 80 },

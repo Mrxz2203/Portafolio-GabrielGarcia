@@ -6,7 +6,7 @@ function Footer() {
   const contacts = [
     {
       label: "LinkedIn",
-      value: "Jarold García",
+      value: "Gabriel García",
       href: "https://www.linkedin.com/in/jarold-gabriel-garcia-cartagena-54b80b20b/",
       type: "linkedin",
       icon: (
