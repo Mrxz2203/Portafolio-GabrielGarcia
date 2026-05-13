@@ -8,44 +8,121 @@ function Skills() {
       name: "Frontend",
       icon: <img src="/frontend.png" alt="frontend" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
-        { name: "React",      emoji: "⚛️",  level: "Intermedio", pct: 65 },
-        { name: "Angular",    emoji: "🅰️",  level: "Intermedio", pct: 65 },
-        { name: "HTML / CSS", emoji: "🎨",  level: "Avanzado",   pct: 80 },
+        { 
+    name: "React", 
+    icon: <img src="/react.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+  { 
+    name: "Angular", 
+    icon: <img src="/angular.png" alt="angular" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+    { 
+    name: "HTML/CSS", 
+    icon: <img src="/html.png" alt="angular" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },    
+
       ],
     },
     {
       name: "Backend",
       icon: <img src="/backend.png" alt="backend" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
-        { name: "Java",   emoji: "☕", level: "Intermedio", pct: 60 },
-        { name: "Python", emoji: "🐍", level: "Intermedio", pct: 65 },
-        { name: "C#",     emoji: "💠", level: "Intermedio", pct: 55 },
+        { 
+    name: "Java", 
+    icon: <img src="/java.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+        { 
+    name: "Python", 
+    icon: <img src="/python.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+       { 
+    name: "C#", 
+    icon: <img src="/c.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
       ],
     },
     {
       name: "Base de Datos",
       icon: <img src="/pgadmin.png" alt="pgadmin" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
-        { name: "SQL Server", emoji: "🛢️", level: "Avanzado",   pct: 80 },
-        { name: "MySQL",      emoji: "🐬", level: "Intermedio", pct: 65 },
-        { name: "SQLite",     emoji: "📦", level: "Avanzado",   pct: 75 },
+       { 
+    name: "SQL Server", 
+    icon: <img src="/server.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+        { 
+    name: "MySQL", 
+    icon: <img src="/mysql.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
       ],
     },
     {
       name: "Herramientas de Microsoft Office",
-      icon: <img src="/excel.png" alt="excel" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      icon: <img src="/office.png" alt="excel" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
-        { name: "Excel",      emoji: "📊", level: "Avanzado",   pct: 80 },
-        { name: "AppScript",  emoji: "📜", level: "Intermedio", pct: 60 },
+        { 
+    name: "Excel", 
+    icon: <img src="/excel.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+       { 
+    name: "Word", 
+    icon: <img src="/word.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+  { 
+    name: "PowerPoint", 
+    icon: <img src="/powerpoint.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+  { 
+    name: "AppScript", 
+    icon: <img src="/script.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
       ],
     },
     {
       name: "Habilidades Blandas",
       icon: <img src="/developer.png" alt="developer" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
-        { name: "Liderazgo",         emoji: "🎯", level: "Desarrollado", pct: 85 },
-        { name: "Trabajo en equipo", emoji: "👥", level: "Desarrollado", pct: 90 },
-        { name: "Proactividad",      emoji: "🚀", level: "Desarrollado", pct: 85 },
+       { 
+    name: "Liderazgo", 
+    icon: <img src="/liderazgo.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+        { 
+    name: "Trabajo en Equipo", 
+    icon: <img src="/equipo.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
+        { 
+    name: "Proactividad", 
+    icon: <img src="/proactividad.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    level: "Intermedio", 
+    pct: 65 
+  },
       ],
     },
   ];
@@ -80,7 +157,7 @@ function Skills() {
                   <div key={si} className="skill-item">
                     <div className="skill-info">
                       <span className="skill-name">
-                        <span className="skill-emoji">{sk.emoji}</span>
+                         <span className="skill-emoji">{sk.icon}</span>
                         {sk.name}
                       </span>
                       <span className="skill-level">{sk.level}</span>

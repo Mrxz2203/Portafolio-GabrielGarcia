@@ -8,14 +8,14 @@ function Experience() {
       company: "GM Ingenieros y Consultores",
       role: "Practicante de Ingeniería de Sistemas",
       logo: <img src="/Logo.png" alt="GM Ingenieros y Consultores" style={{ width: '2rem', height: '2rem', objectFit: 'contain' }} />,
-      badge: "Presencial",
-      duration: "3 meses y 15 días  •  Mar 2023 – Jun 2023",
+      badge: "Híbrida",
+      duration: "3 meses y 15 días  •  Mar 2025 – Jun 2025",
       image: "/Constancia.png",
       description:
         "Agradezco siempre a la empresa por permitirme mostrar mis habilidades y desplegar el vivir en tiempo como es las funciones de mi labor en mi carrera.Curse como practicante de ingenieria de sistemas de informacion durante 3 meses y 15 dias, en el tiempo que apoye en el proyecto mibanco usando framework AngularStudio, en base de datos a SQL, y en backend el uso de Java.Aprendi AppScript con la sintaxis de Javas para proyectos usando Excel.Tambien el dominio de Frontend y posteriores proyectos de la empresa.",
       tags: ["Angular", "Java", "SQL", "AppScript", "Excel", "Frontend"],
     },
-    // Agrega más experiencias aquí siguiendo el mismo formato
+
   ];
 
   return (
