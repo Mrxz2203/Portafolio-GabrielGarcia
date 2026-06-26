@@ -15,7 +15,17 @@ function Experience() {
         "Agradezco siempre a la empresa por permitirme mostrar mis habilidades y desplegar el vivir en tiempo como es las funciones de mi labor en mi carrera.Curse como practicante de ingenieria de sistemas de informacion durante 3 meses y 15 dias, en el tiempo que apoye en el proyecto mibanco usando framework AngularStudio, en base de datos a SQL, y en backend el uso de Java.Aprendi AppScript con la sintaxis de Javas para proyectos usando Excel.Tambien el dominio de Frontend y posteriores proyectos de la empresa.",
       tags: ["Angular", "Java", "SQL", "AppScript", "Excel", "Frontend"],
     },
-
+    {
+      company: "Devdatep Consulting E.I.R.L",
+      role: "Desarrollador Frontend React Junior y Co-Líder Frontend",
+      logo: <img src="/Devlogo.png" alt="Devdatep Consulting" style={{ width: '2rem', height: '2rem', objectFit: 'contain' }} />,
+      badge: "Híbrida",
+      duration: "3 meses y 7 días  •  Mar 2026 – Jun 2026",
+      image: "/DevCertificado.jpg",
+      description:
+        "Desempeñé el rol de Desarrollador Frontend React Junior y Co-Líder Frontend en Devdatep Consulting, acumulando 350 horas desde marzo hasta junio de 2026. Creé e implementé maquetaciones, corregí rutas y dashboards, y elaboré documentación técnica de componentes y autenticación para módulos de clima-cultura, reclutamiento y asistencia. Implementé consumo de APIs en páginas de filtros, entrevistas y contacto de postulantes usando Zod, useState, useEffect y BrunoApi con datos de HeidiSQL. Además, coordiné y lideré al equipo frontend, supervisando proyectos como GastroClick y RuraqDev.",
+      tags: ["React", "Zod", "useState", "useEffect", "HeidiSQL", "BrunoApi", "Liderazgo"],
+    },
   ];
 
   return (
