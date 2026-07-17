@@ -13,12 +13,11 @@ function About() {
           </h2>
           
           <div className="about-text">
-            <p>
-              Estudiante de la carrera de Ingeniería de Sistemas 
-              Computacionales que cursa el 10 ciclo en la Universidad 
-              Peruana de Ciencias Aplicadas, perteneciente al tercio 
-              superior de mi facultad.
-            </p>
+            <p> 
+               </p>
+              Egresado de la carrera de Ingeniería de Sistemas 
+              Computacionales,  curse en la Universidad
+              Peruana de Ciencias Aplicadas, durante los periodos entre 2021 y 2026.
             <p>
               Tengo conocimiento intermedio en el dominio de Lenguajes 
               como Python, C# y JavaScript.

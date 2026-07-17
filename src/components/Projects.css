@@ -20,6 +20,9 @@
   font-weight: 700;
   margin-bottom: 4rem;
   text-align: left;
+  .projects-title .highlight {
+  color: #00D9DD;
+}
 }
 
 .projects-grid {

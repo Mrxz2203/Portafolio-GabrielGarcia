@@ -19,7 +19,7 @@ function Experience() {
       company: "Devdatep Consulting E.I.R.L",
       role: "Desarrollador Frontend React Junior y Co-Líder Frontend",
       logo: <img src="/Devlogo.png" alt="Devdatep Consulting" style={{ width: '2rem', height: '2rem', objectFit: 'contain' }} />,
-      badge: "Híbrida",
+      badge: "Virtual",
       duration: "3 meses y 7 días  •  Mar 2026 – Jun 2026",
       image: "/DevCertificado.jpg",
       description:

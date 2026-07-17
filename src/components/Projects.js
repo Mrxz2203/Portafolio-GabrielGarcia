@@ -5,22 +5,22 @@ import './Projects.css';
 function Projects() {
   const projects = [
     {
-      title: "Proyecto Pokeapp - Devdatep ",
-      image: "/Pokeapp.png",
-      link: "https://devdatep-prueba-tecnica.vercel.app/"
+      title: "Shimbaru- Gamag ",
+      image: "/Shimbaru.png",
+      link: "https://shimbaru-project.vercel.app/"
     },
     {
-      title: " Proyecto HelpTask",
-      image: "/HelpTask.png", 
+      title: "HelpTask",
+      image: "/Helptask.png", 
       link: "https://proyecto-task.vercel.app/"
     },
     {
-      title: "Proyecto  Arsenal - Only Frontend",
+      title: " Landing Page Arsenal",
       image: "/Arsenal.png", 
       link: "https://arsenal-front.vercel.app/"
     },
     {
-      title: "Proyecto Filmi",  
+      title: "Filmi",  
       image: "/Filmi.png",       
       link: "https://proyecto-filmi.vercel.app/" 
     }
@@ -29,7 +29,10 @@ function Projects() {
   return (
     <section className="projects-section" id="proyectos">
       <div className="projects-container">
-        <h2 className="projects-title">Mis proyectos</h2>
+        
+<h2 className="projects-title">
+  Mis <span className="highlight">Proyectos</span>
+</h2>
         
         <div className="projects-grid">
           {projects.map((project, index) => (
