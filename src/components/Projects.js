@@ -11,7 +11,7 @@ function Projects() {
     },
     {
       title: "HelpTask",
-      image: "/Helptask.png", 
+      image: "/HelpTask.png", 
       link: "https://proyecto-task.vercel.app/"
     },
     {
