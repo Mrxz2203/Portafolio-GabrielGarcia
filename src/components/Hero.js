@@ -25,9 +25,9 @@ function Hero() {
           <div className="buttons">
            <a href="https://portafolio-personal-steel-seven.vercel.app/" className="btn-primary" target="_blank" 
            rel="noopener noreferrer">Portafolio Personal</a>
-            <a href="/cv_GabrielGarcia.pdf" download className="btn-secondary">
-              Descargar CV 📥
-            </a>
+            <a href="/CV_GabrielGarcia.pdf" download className="btn-secondary">
+  Descargar CV 📥
+</a>
           </div>
         </div>
 
