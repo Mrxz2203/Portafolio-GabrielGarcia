@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Mi Portafolio Personal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portafolio web personal desarrollado en **React**, diseñado para presentar información profesional: perfil, experiencia laboral, habilidades técnicas y proyectos realizados. Cuenta con una interfaz moderna de una sola página (single-page), animaciones suaves al hacer scroll y diseño totalmente responsive.
 
-## Available Scripts
+## 🚀 Demo
 
-In the project directory, you can run:
+El sitio está desplegado en Vercel y accesible como portafolio personal (ver botón "Portafolio Personal" dentro del propio sitio).
 
-### `npm start`
+## 🧩 Tecnologías utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** (Create React App / componentes funcionales con Hooks)
+- **CSS3** puro (sin frameworks de estilos), con animaciones (`@keyframes`), gradientes y `backdrop-filter`
+- Despliegue en **Vercel**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Estructura del proyecto
 
-### `npm test`
+```
+src/
+├── App.js / App.css          # Componente raíz, ensambla todas las secciones
+└── components/
+    ├── Navbar.js / .css      # Barra de navegación fija con efecto de scroll
+    ├── Hero.js / .css        # Sección de bienvenida con foto de perfil y botones de acción
+    ├── About.js / .css       # Sección "Acerca de mí"
+    ├── Skills.js / .css      # Grid de habilidades técnicas por categoría con barras de progreso
+    ├── Experience.js / .css  # Tarjetas de experiencia laboral / prácticas
+    ├── Projects.js / .css    # Grid de proyectos realizados con enlaces
+    └── Footer.js / .css      # Sección de contacto y navegación inferior
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖥️ Secciones del sitio
 
-### `npm run build`
+| Sección | Ancla | Descripción |
+|---|---|---|
+| Inicio | `#inicio` | Presentación con nombre, botón al portafolio y descarga de CV en PDF |
+| Acerca de mí | `#acerca` | Resumen académico y profesional |
+| Habilidades | `#habilidades` | Categorías: Frontend, Backend, Bases de Datos, Herramientas de Microsoft Office y Habilidades Blandas, cada una con nivel (%) |
+| Experiencia | `#experiencia` | Tarjetas con empresa, rol, duración, descripción y tecnologías usadas |
+| Proyectos | `#proyectos` | Galería de proyectos con enlace de vista previa (`Ver proyecto →`) |
+| Contáctame | `#contacto` | Tarjetas de contacto (LinkedIn, GitHub, Correo) y navegación de cierre |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Características
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Navegación fija (Navbar)** que cambia de estilo (fondo con blur y sombra) al hacer scroll, usando el hook `useState` + `useEffect` y el evento `scroll` del `window`.
+- **Botones de scroll animados** al final de cada sección, que llevan suavemente (`scrollIntoView` / `scrollTo` con `behavior: 'smooth'`) a la siguiente.
+- **Barras de progreso de habilidades** animadas con `@keyframes fillBar`, generadas dinámicamente a partir de un arreglo de objetos (`name`, `icon`, `level`, `pct`).
+- **Tarjetas de experiencia** con imagen de constancia/certificado, badge de modalidad (Híbrida/Virtual), duración y tags de tecnologías.
+- **Grid de proyectos** con overlay al hacer hover (`Ver proyecto →`) que enlaza a cada proyecto desplegado.
+- **Totalmente responsive**, con media queries para tablets (`max-width: 968px` / `1024px`) y móviles (`max-width: 600px`).
+- Descarga directa del CV en PDF desde la sección de inicio.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Instalación y uso
 
-### `npm run eject`
+```bash
+# Clonar el repositorio
+git clone <url-del-repositorio>
+cd <nombre-del-proyecto>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Instalar dependencias
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Ejecutar en modo desarrollo
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Generar build de producción
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+El proyecto se abrirá por defecto en `http://localhost:3000`.
 
-## Learn More
+## 🖼️ Recursos estáticos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+El proyecto espera los siguientes archivos en la carpeta `public/`, referenciados por los componentes:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `perfil.jpg`, `Desarrollador.png` — imágenes de perfil e ilustración
+- `CV_GabrielGarcia.pdf` — CV descargable
+- `Logo.png`, `Devlogo.png`, `Constancia.png`, `DevCertificado.jpg` — logos y constancias de experiencia
+- `frontend.png`, `backend.png`, `pgadmin.png`, `office.png`, `developer.png` — íconos de categorías de habilidades
+- `react.png`, `angular.png`, `html.png`, `java.png`, `python.png`, `c.png`, `server.png`, `mysql.png`, `excel.png`, `word.png`, `powerpoint.png`, `script.png`, `liderazgo.png`, `equipo.png`, `proactividad.png` — íconos individuales de skills
+- `Shimbaru.png`, `HelpTask.png`, `Arsenal.png`, `Filmi.png` — capturas de los proyectos mostrados
 
-### Code Splitting
+## 📬 Contacto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **LinkedIn:** [Gabriel García](https://www.linkedin.com/in/jarold-gabriel-garcia-cartagena-54b80b20b/)
+- **GitHub:** [Mrxz2203](https://github.com/Mrxz2203)
+- **Correo:** jarold.pamer@gmail.com
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2025 Jarold Gabriel García Cartagena
