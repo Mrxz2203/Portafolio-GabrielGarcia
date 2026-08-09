@@ -22,7 +22,7 @@ function Skills() {
   },
     { 
     name: "HTML/CSS", 
-    icon: <img src="/html.png" alt="angular" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/html.png" alt="html" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },    
@@ -33,24 +33,25 @@ function Skills() {
       name: "Backend",
       icon: <img src="/backend.png" alt="backend" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
-        { 
-    name: "Java", 
-    icon: <img src="/java.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-        { 
-    name: "Python", 
-    icon: <img src="/python.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-       { 
-    name: "C#", 
-    icon: <img src="/c.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
+     // Backend
+{ 
+  name: "Java", 
+  icon: <img src="/java.png" alt="java" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+  level: "Intermedio", 
+  pct: 65 
+},
+{ 
+  name: "Python", 
+  icon: <img src="/python.png" alt="python" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+  level: "Intermedio", 
+  pct: 65 
+},
+{ 
+  name: "C#", 
+  icon: <img src="/c.png" alt="c-sharp" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+  level: "Intermedio", 
+  pct: 65 
+},
       ],
     },
     {
@@ -59,13 +60,13 @@ function Skills() {
       skills: [
        { 
     name: "SQL Server", 
-    icon: <img src="/server.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/server.png" alt="sql-server" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },
         { 
     name: "MySQL", 
-    icon: <img src="/mysql.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/mysql.png" alt="mysql" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },
@@ -73,29 +74,29 @@ function Skills() {
     },
     {
       name: "Herramientas de Microsoft Office",
-      icon: <img src="/office.png" alt="excel" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      icon: <img src="/office.png" alt="office" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
       skills: [
         { 
     name: "Excel", 
-    icon: <img src="/excel.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/excel.png" alt="excel" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },
        { 
     name: "Word", 
-    icon: <img src="/word.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/word.png" alt="word" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },
   { 
     name: "PowerPoint", 
-    icon: <img src="/powerpoint.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/powerpoint.png" alt="powerpoint" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },
   { 
     name: "AppScript", 
-    icon: <img src="/script.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/script.png" alt="appscript" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },
@@ -107,19 +108,19 @@ function Skills() {
       skills: [
        { 
     name: "Liderazgo", 
-    icon: <img src="/liderazgo.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/liderazgo.png" alt="liderazgo" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },
         { 
     name: "Trabajo en Equipo", 
-    icon: <img src="/equipo.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/equipo.png" alt="trabajo-en-equipo" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },
         { 
     name: "Proactividad", 
-    icon: <img src="/proactividad.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
+    icon: <img src="/proactividad.png" alt="proactividad" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
     level: "Intermedio", 
     pct: 65 
   },

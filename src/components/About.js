@@ -12,36 +12,35 @@ function About() {
             Acerca de <span className="highlight">mí</span>
           </h2>
           
-          <div className="about-text">
-            <p> 
-               </p>
-              Egresado de la carrera de Ingeniería de Sistemas 
-              Computacionales,  curse en la Universidad
-              Peruana de Ciencias Aplicadas, durante los periodos entre 2021 y 2026.
-            <p>
-              Tengo conocimiento intermedio en el dominio de Lenguajes 
-              como Python, C# y JavaScript.
-              En cuanto se refiere a Base de datos, domino temas
-              avanzados del SQL Lite y SQL Server. 
-            </p>
-            <p>
-              Soy desarrollador de sitios webs en HTML usando Angular 
-              Studio, React, Vue en desarrollo de aplicaciones web y movil.
-              Asimismo, poseo experiencia como practicante preprofesional de Ingenieria 
-              de Sistemas
-              en la empresa GM Ingenierios y Consultores SAC.
-            </p>
-            <p>
-              Por otro lado cuento con habilidades de liderazgo, 
-              proactividad y perseverancia para las situaciones laborales 
-              como sistemáticas en las que me encuentro. Por ello, estoy 
-              buscando oportunidades en un entorno laboral dinámico y 
-              enriquecedor que permita desarrollarme para ser un gran 
-              profesional.
-            </p>
-          </div>
-        </div>
-
+        <div className="about-text">
+  <p>
+    Egresado de la carrera de Ingeniería de Sistemas 
+    Computacionales, curse en la Universidad
+    Peruana de Ciencias Aplicadas, durante los periodos entre 2021 y 2026.
+  </p>
+  <p>
+    Tengo conocimiento intermedio en el dominio de Lenguajes 
+    como Python, C# y JavaScript.
+    En cuanto se refiere a Base de datos, domino temas
+    avanzados del SQL Lite y SQL Server. 
+  </p>
+  <p>
+    Soy desarrollador de sitios webs en HTML usando Angular 
+    Studio, React, Vue en desarrollo de aplicaciones web y movil.
+    Asimismo, poseo experiencia como practicante preprofesional de Ingenieria 
+    de Sistemas
+    en la empresa GM Ingenierios y Consultores SAC.
+  </p>
+  <p>
+    Por otro lado cuento con habilidades de liderazgo, 
+    proactividad y perseverancia para las situaciones laborales 
+    como sistemáticas en las que me encuentro. Por ello, estoy 
+    buscando oportunidades en un entorno laboral dinámico y 
+    enriquecedor que permita desarrollarme para ser un gran 
+    profesional.
+  </p>
+</div>
+</div>
         {/* Ilustración */}
         <div className="about-illustration">
           <div className="illustration-wrapper">
