@@ -237,8 +237,18 @@
     width: 100%;
   }
   
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-  }
+ .btn-primary,
+.btn-secondary {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.85rem;              
+  font-weight: 600;
+  letter-spacing: 0.05em;          
+  text-transform: uppercase;       
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
 }

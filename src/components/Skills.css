@@ -76,15 +76,16 @@
 .skill-category:hover {
   transform: translateY(-6px);
   box-shadow: 0 25px 55px rgba(0, 0, 0, 0.3), 
-              0 0 0 1px rgba(0, 217, 221, 0.15);   /* ← simplificado: sombra difusa + borde sutil en vez de 2 sombras densas */
+              0 0 0 1px rgba(0, 217, 221, 0.15);
   border-color: rgba(0, 217, 221, 0.25);
 }
+
 /* Cabecera de categoría */
 .category-header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
@@ -120,67 +121,51 @@
   font-weight: 600;
 }
 
-/* Lista de skills */
+/* Descripción corta de categoría */
+.category-description {
+  font-size: 0.8rem;
+  color: #7a8a9a;
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
+}
+
+/* Lista de skills como pills */
 .skill-list {
   display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
-.skill-item {
+.skill-pill {
   display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  padding: 0.55rem 1rem 0.55rem 0.6rem;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
-.skill-name {
+.skill-pill:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 217, 221, 0.35);
+  background: rgba(0, 217, 221, 0.06);
+}
+
+.skill-pill-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.skill-pill-name {
   font-size: 0.85rem;
-  color: #cfd8dc;
+  color: #e0e6ea;
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+  white-space: nowrap;
 }
-
-.skill-emoji {
-  font-size: 0.95rem;
-}
-
-.skill-level {
-  font-size: 0.72rem;
-  color: #7a8a9a;
-  font-weight: 500;
-}
-
-/* Barra de progreso */
-.skill-bar {
-  height: 5px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.skill-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #00D9DD, #00a8ab);
-  border-radius: 10px;
-  transform-origin: left;
-  animation: fillBar 1s cubic-bezier(0.23, 1, 0.32, 1) both;
-  animation-delay: 0.5s;
-}
-
-@keyframes fillBar {
-  from { transform: scaleX(0); }
-  to   { transform: scaleX(1); }
-}
-
-
 
 /* Responsive */
 @media (max-width: 1024px) {

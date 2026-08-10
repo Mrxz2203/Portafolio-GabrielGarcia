@@ -16,19 +16,14 @@ function SkillCategory({ cat, ci }) {
         <span className="category-name">{cat.name}</span>
         <span className="category-count">{cat.skills.length}</span>
       </div>
+
+      <p className="category-description">{cat.description}</p>
+
       <div className="skill-list">
         {cat.skills.map((sk, si) => (
-          <div key={si} className="skill-item">
-            <div className="skill-info">
-              <span className="skill-name">
-                <span className="skill-emoji">{sk.icon}</span>
-                {sk.name}
-              </span>
-              <span className="skill-level">{sk.level}</span>
-            </div>
-            <div className="skill-bar">
-              <div className="skill-fill" style={{ width: `${sk.pct}%` }} />
-            </div>
+          <div key={si} className="skill-pill">
+            {sk.icon}
+            <span className="skill-pill-name">{sk.name}</span>
           </div>
         ))}
       </div>
@@ -36,134 +31,61 @@ function SkillCategory({ cat, ci }) {
   );
 }
 
-
 function Skills() {
   const categories = [
     {
       name: "Frontend",
       icon: <img src="/frontend.png" alt="frontend" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      description: "Interfaces modernas, responsivas y componentizadas.",
       skills: [
-        { 
-    name: "React", 
-    icon: <img src="/react.png" alt="react" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-  { 
-    name: "Angular", 
-    icon: <img src="/angular.png" alt="angular" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-    { 
-    name: "HTML/CSS", 
-    icon: <img src="/html.png" alt="html" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },    
-
+        { name: "React", icon: <img src="/react.png" alt="react" className="skill-pill-icon" /> },
+        { name: "Angular", icon: <img src="/angular.png" alt="angular" className="skill-pill-icon" /> },
+        { name: "HTML/CSS", icon: <img src="/html.png" alt="html" className="skill-pill-icon" /> },
       ],
     },
     {
       name: "Backend",
       icon: <img src="/backend.png" alt="backend" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      description: "Lógica de negocio, APIs y procesamiento de datos.",
       skills: [
-     // Backend
-{ 
-  name: "Java", 
-  icon: <img src="/java.png" alt="java" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-  level: "Intermedio", 
-  pct: 65 
-},
-{ 
-  name: "Python", 
-  icon: <img src="/python.png" alt="python" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-  level: "Intermedio", 
-  pct: 65 
-},
-{ 
-  name: "C#", 
-  icon: <img src="/c.png" alt="c-sharp" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-  level: "Intermedio", 
-  pct: 65 
-},
+        { name: "Java", icon: <img src="/java.png" alt="java" className="skill-pill-icon" /> },
+        { name: "Python", icon: <img src="/python.png" alt="python" className="skill-pill-icon" /> },
+        { name: "C#", icon: <img src="/c.png" alt="c-sharp" className="skill-pill-icon" /> },
       ],
     },
     {
       name: "Base de Datos",
       icon: <img src="/pgadmin.png" alt="pgadmin" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      description: "Diseño, consultas y administración de datos relacionales.",
       skills: [
-       { 
-    name: "SQL Server", 
-    icon: <img src="/server.png" alt="sql-server" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-        { 
-    name: "MySQL", 
-    icon: <img src="/mysql.png" alt="mysql" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
+        { name: "SQL Server", icon: <img src="/server.png" alt="sql-server" className="skill-pill-icon" /> },
+        { name: "MySQL", icon: <img src="/mysql.png" alt="mysql" className="skill-pill-icon" /> },
       ],
     },
     {
       name: "Herramientas de Microsoft Office",
       icon: <img src="/office.png" alt="office" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      description: "Documentación, reportes y automatización de tareas.",
       skills: [
-        { 
-    name: "Excel", 
-    icon: <img src="/excel.png" alt="excel" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-       { 
-    name: "Word", 
-    icon: <img src="/word.png" alt="word" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-  { 
-    name: "PowerPoint", 
-    icon: <img src="/powerpoint.png" alt="powerpoint" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-  { 
-    name: "AppScript", 
-    icon: <img src="/script.png" alt="appscript" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
+        { name: "Excel", icon: <img src="/excel.png" alt="excel" className="skill-pill-icon" /> },
+        { name: "Word", icon: <img src="/word.png" alt="word" className="skill-pill-icon" /> },
+        { name: "PowerPoint", icon: <img src="/powerpoint.png" alt="powerpoint" className="skill-pill-icon" /> },
+        { name: "AppScript", icon: <img src="/script.png" alt="appscript" className="skill-pill-icon" /> },
       ],
     },
     {
       name: "Habilidades Blandas",
       icon: <img src="/developer.png" alt="developer" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      description: "Trabajo colaborativo y gestión de equipos técnicos.",
       skills: [
-       { 
-    name: "Liderazgo", 
-    icon: <img src="/liderazgo.png" alt="liderazgo" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-        { 
-    name: "Trabajo en Equipo", 
-    icon: <img src="/equipo.png" alt="trabajo-en-equipo" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
-        { 
-    name: "Proactividad", 
-    icon: <img src="/proactividad.png" alt="proactividad" style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }} />, 
-    level: "Intermedio", 
-    pct: 65 
-  },
+        { name: "Liderazgo", icon: <img src="/liderazgo.png" alt="liderazgo" className="skill-pill-icon" /> },
+        { name: "Trabajo en Equipo", icon: <img src="/equipo.png" alt="trabajo-en-equipo" className="skill-pill-icon" /> },
+        { name: "Proactividad", icon: <img src="/proactividad.png" alt="proactividad" className="skill-pill-icon" /> },
       ],
     },
   ];
 
-   return (
+  return (
     <section className="skills-section" id="habilidades">
       <div className="skills-container">
         <div className="skills-header">
@@ -191,4 +113,5 @@ function Skills() {
     </section>
   );
 }
+
 export default Skills;
