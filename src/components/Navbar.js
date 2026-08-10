@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
-      <h1 className="logo">Mi Portafolio</h1>
+      <h1 className="logo">JGGC</h1>
       <nav>
         <a href="#inicio">Inicio</a>
         <a href="#acerca">Acerca de mí</a>
