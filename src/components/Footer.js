@@ -1,6 +1,28 @@
 // src/components/Footer.js
 import React from 'react';
+import useInView from '../hooks/useInView';
 import './Footer.css';
+
+function FooterCard({ contact, index }) {
+  const [ref, inView] = useInView();
+  return (
+    <a
+      ref={ref}
+      href={contact.href}
+      className={`footer-card reveal-on-scroll ${inView ? 'in-view' : ''}`}
+      style={{ transitionDelay: `${index * 0.12}s` }}
+      target={contact.type !== "email" ? "_blank" : "_self"}
+      rel="noopener noreferrer"
+    >
+      <div className={`footer-card-icon ${contact.type}`}>
+        {contact.icon}
+      </div>
+      <span className="footer-card-label">{contact.label}</span>
+      <span className="footer-card-value">{contact.value}</span>
+      <span className="footer-card-arrow">Ver perfil →</span>
+    </a>
+  );
+}
 
 function Footer() {
   const contacts = [
@@ -60,20 +82,7 @@ function Footer() {
         {/* Tarjetas de contacto */}
         <div className="footer-cards">
           {contacts.map((c, i) => (
-            <a
-              key={i}
-              href={c.href}
-              className="footer-card"
-              target={c.type !== "email" ? "_blank" : "_self"}
-              rel="noopener noreferrer"
-            >
-              <div className={`footer-card-icon ${c.type}`}>
-                {c.icon}
-              </div>
-              <span className="footer-card-label">{c.label}</span>
-              <span className="footer-card-value">{c.value}</span>
-              <span className="footer-card-arrow">Ver perfil →</span>
-            </a>
+            <FooterCard key={i} contact={c} index={i} />
           ))}
         </div>
 
@@ -89,7 +98,7 @@ function Footer() {
           <a href="#proyectos">Proyectos</a>
         </nav>
 
-        <p className="footer-copy">© 2025 Jarold Gabriel García Cartagena</p>
+        <p className="footer-copy">© {new Date().getFullYear()} Jarold Gabriel García Cartagena</p>
       </div>
     </footer>
   );

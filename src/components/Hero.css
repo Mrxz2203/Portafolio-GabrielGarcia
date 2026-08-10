@@ -8,6 +8,29 @@
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+  overflow: hidden;   
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -250px;
+  left: -150px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 217, 221, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 217, 221, 0.05) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .hero-content {
@@ -18,6 +41,8 @@
   gap: 4rem;
   width: 100%;
   max-width: 1400px;
+  position: relative;   
+  z-index: 1;           
 }
 
 /* Texto */
@@ -91,8 +116,15 @@
   background: white;
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35), 
+              0 10px 25px rgba(0, 0, 0, 0.2),
+              0 0 0 1px rgba(0, 217, 221, 0.1);
   max-width: 350px;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
 }
 
 .profile-img {

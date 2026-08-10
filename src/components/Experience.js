@@ -1,6 +1,60 @@
 // src/components/Experience.js
 import React from 'react';
+import useInView from '../hooks/useInView';
 import './Experience.css';
+
+function ExpCard({ exp, index }) {
+  const [ref, inView] = useInView();
+  return (
+    <div
+      ref={ref}
+      className={`exp-card reveal-on-scroll ${inView ? 'in-view' : ''}`}
+      style={{ transitionDelay: `${index * 0.15}s` }}
+    >
+      {/* Izquierda: texto */}
+      <div className="exp-card-left">
+        <div>
+          <div className="exp-card-header">
+            <div className="exp-company-info">
+              <div className="exp-logo">{exp.logo}</div>
+              <div>
+                <div className="exp-company-name">{exp.company}</div>
+                <div className="exp-role">{exp.role}</div>
+              </div>
+            </div>
+            <span className="exp-badge">{exp.badge}</span>
+          </div>
+
+          <div className="exp-duration">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            {exp.duration}
+          </div>
+
+          <p className="exp-description">{exp.description}</p>
+        </div>
+
+        <div className="exp-tags">
+          {exp.tags.map((tag, i) => (
+            <span key={i} className="exp-tag">{tag}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* Derecha: imagen grande */}
+      <div className="exp-image-wrapper">
+        <img
+          src={exp.image}
+          alt={`Constancia ${exp.company}`}
+          className="exp-image"
+        />
+        <div className="exp-image-overlay" />
+      </div>
+    </div>
+  );
+}
 
 function Experience() {
   const experiences = [
@@ -42,51 +96,7 @@ function Experience() {
 
         {/* Tarjetas */}
         {experiences.map((exp, index) => (
-          <div key={index} className="exp-card">
-
-            {/* Izquierda: texto */}
-            <div className="exp-card-left">
-              <div>
-                <div className="exp-card-header">
-                  <div className="exp-company-info">
-                    <div className="exp-logo">{exp.logo}</div>
-                    <div>
-                      <div className="exp-company-name">{exp.company}</div>
-                      <div className="exp-role">{exp.role}</div>
-                    </div>
-                  </div>
-                  <span className="exp-badge">{exp.badge}</span>
-                </div>
-
-                <div className="exp-duration">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="12" cy="12" r="10"/>
-                    <polyline points="12 6 12 12 16 14"/>
-                  </svg>
-                  {exp.duration}
-                </div>
-
-                <p className="exp-description">{exp.description}</p>
-              </div>
-
-              <div className="exp-tags">
-                {exp.tags.map((tag, i) => (
-                  <span key={i} className="exp-tag">{tag}</span>
-                ))}
-              </div>
-            </div>
-
-            {/* Derecha: imagen grande */}
-            <div className="exp-image-wrapper">
-              <img
-                src={exp.image}
-                alt={`Constancia ${exp.company}`}
-                className="exp-image"
-              />
-              <div className="exp-image-overlay" />
-            </div>
-
-          </div>
+          <ExpCard key={index} exp={exp} index={index} />
         ))}
       </div>
 

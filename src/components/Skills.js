@@ -1,6 +1,41 @@
 // src/components/Skills.js
 import React from 'react';
 import './Skills.css';
+import useInView from '../hooks/useInView';
+
+function SkillCategory({ cat, ci }) {
+  const [ref, inView] = useInView();
+  return (
+    <div
+      ref={ref}
+      className={`skill-category reveal-on-scroll ${inView ? 'in-view' : ''}`}
+      style={{ transitionDelay: `${ci * 0.1}s` }}
+    >
+      <div className="category-header">
+        <div className="category-icon">{cat.icon}</div>
+        <span className="category-name">{cat.name}</span>
+        <span className="category-count">{cat.skills.length}</span>
+      </div>
+      <div className="skill-list">
+        {cat.skills.map((sk, si) => (
+          <div key={si} className="skill-item">
+            <div className="skill-info">
+              <span className="skill-name">
+                <span className="skill-emoji">{sk.icon}</span>
+                {sk.name}
+              </span>
+              <span className="skill-level">{sk.level}</span>
+            </div>
+            <div className="skill-bar">
+              <div className="skill-fill" style={{ width: `${sk.pct}%` }} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 
 function Skills() {
   const categories = [
@@ -128,11 +163,9 @@ function Skills() {
     },
   ];
 
-  return (
+   return (
     <section className="skills-section" id="habilidades">
       <div className="skills-container">
-
-        {/* Encabezado */}
         <div className="skills-header">
           <h2 className="skills-title">
             Mis <span className="highlight">Habilidades</span>
@@ -140,50 +173,16 @@ function Skills() {
           <p className="skills-subtitle">Tecnologías y competencias</p>
         </div>
 
-        {/* Grid de categorías */}
         <div className="skills-grid">
           {categories.map((cat, ci) => (
-            <div key={ci} className="skill-category">
-
-              {/* Cabecera */}
-              <div className="category-header">
-                <div className="category-icon">{cat.icon}</div>
-                <span className="category-name">{cat.name}</span>
-                <span className="category-count">{cat.skills.length}</span>
-              </div>
-
-              {/* Lista */}
-              <div className="skill-list">
-                {cat.skills.map((sk, si) => (
-                  <div key={si} className="skill-item">
-                    <div className="skill-info">
-                      <span className="skill-name">
-                         <span className="skill-emoji">{sk.icon}</span>
-                        {sk.name}
-                      </span>
-                      <span className="skill-level">{sk.level}</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div
-                        className="skill-fill"
-                        style={{ width: `${sk.pct}%` }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-            </div>
+            <SkillCategory key={ci} cat={cat} ci={ci} />
           ))}
         </div>
       </div>
 
-      {/* Botón scroll */}
       <button
         className="scroll-button-down"
-        onClick={() =>
-          document.getElementById('experiencia')?.scrollIntoView({ behavior: 'smooth' })
-        }
+        onClick={() => document.getElementById('experiencia')?.scrollIntoView({ behavior: 'smooth' })}
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path d="M12 5v14M19 12l-7 7-7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -192,5 +191,4 @@ function Skills() {
     </section>
   );
 }
-
 export default Skills;

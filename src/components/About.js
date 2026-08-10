@@ -1,5 +1,6 @@
 // src/components/About.js
 import React from 'react';
+import { Laptop, Mail, Palette, Coffee, Smartphone, Rocket, Lightbulb, Target } from 'lucide-react';
 import './About.css';
 
 function About() {
@@ -12,35 +13,36 @@ function About() {
             Acerca de <span className="highlight">mí</span>
           </h2>
           
-        <div className="about-text">
-  <p>
-    Egresado de la carrera de Ingeniería de Sistemas 
-    Computacionales, curse en la Universidad
-    Peruana de Ciencias Aplicadas, durante los periodos entre 2021 y 2026.
-  </p>
-  <p>
-    Tengo conocimiento intermedio en el dominio de Lenguajes 
-    como Python, C# y JavaScript.
-    En cuanto se refiere a Base de datos, domino temas
-    avanzados del SQL Lite y SQL Server. 
-  </p>
-  <p>
-    Soy desarrollador de sitios webs en HTML usando Angular 
-    Studio, React, Vue en desarrollo de aplicaciones web y movil.
-    Asimismo, poseo experiencia como practicante preprofesional de Ingenieria 
-    de Sistemas
-    en la empresa GM Ingenierios y Consultores SAC.
-  </p>
-  <p>
-    Por otro lado cuento con habilidades de liderazgo, 
-    proactividad y perseverancia para las situaciones laborales 
-    como sistemáticas en las que me encuentro. Por ello, estoy 
-    buscando oportunidades en un entorno laboral dinámico y 
-    enriquecedor que permita desarrollarme para ser un gran 
-    profesional.
-  </p>
-</div>
-</div>
+          <div className="about-text">
+            <p>
+              Egresado de la carrera de Ingeniería de Sistemas 
+              Computacionales, curse en la Universidad
+              Peruana de Ciencias Aplicadas, durante los periodos entre 2021 y 2026.
+            </p>
+            <p>
+              Tengo conocimiento intermedio en el dominio de Lenguajes 
+              como Python, C# y JavaScript.
+              En cuanto se refiere a Base de datos, domino temas
+              avanzados del SQL Lite y SQL Server. 
+            </p>
+            <p>
+              Soy desarrollador de sitios webs en HTML usando Angular 
+              Studio, React, Vue en desarrollo de aplicaciones web y movil.
+              Asimismo, poseo experiencia como practicante preprofesional de Ingenieria 
+              de Sistemas
+              en la empresa GM Ingenierios y Consultores SAC.
+            </p>
+            <p>
+              Por otro lado cuento con habilidades de liderazgo, 
+              proactividad y perseverancia para las situaciones laborales 
+              como sistemáticas en las que me encuentro. Por ello, estoy 
+              buscando oportunidades en un entorno laboral dinámico y 
+              enriquecedor que permita desarrollarme para ser un gran 
+              profesional.
+            </p>
+          </div>
+        </div>
+
         {/* Ilustración */}
         <div className="about-illustration">
           <div className="illustration-wrapper">
@@ -53,14 +55,14 @@ function About() {
           
           {/* Iconos decorativos flotantes */}
           <div className="floating-icons">
-            <span className="icon icon-1">💻</span>
-            <span className="icon icon-2">📧</span>
-            <span className="icon icon-3">🎨</span>
-            <span className="icon icon-4">☕</span>
-            <span className="icon icon-5">📱</span>
-            <span className="icon icon-6">🚀</span>
-            <span className="icon icon-7">💡</span>
-            <span className="icon icon-8">🎯</span>
+            <Laptop className="icon icon-1" />
+            <Mail className="icon icon-2" />
+            <Palette className="icon icon-3" />
+            <Coffee className="icon icon-4" />
+            <Smartphone className="icon icon-5" />
+            <Rocket className="icon icon-6" />
+            <Lightbulb className="icon icon-7" />
+            <Target className="icon icon-8" />
           </div>
         </div>
       </div>

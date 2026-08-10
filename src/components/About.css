@@ -11,6 +11,17 @@
   overflow: hidden;
 }
 
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -180px;
+  right: -180px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 217, 221, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
 .about-container {
   display: flex;
   justify-content: space-between;
@@ -18,6 +29,8 @@
   gap: 4rem;
   max-width: 1400px;
   width: 100%;
+  position: relative;   
+  z-index: 1;            
 }
 
 /* Contenido de texto */
@@ -186,6 +199,11 @@
   }
 
   .icon {
-    font-size: 1.5rem;
-  }
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.15;
+  color: #00D9DD;
+  animation: float 6s ease-in-out infinite;
+}
 }
