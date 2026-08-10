@@ -1,0 +1,73 @@
+/* src/styles/common.css */
+
+:root {
+  --color-bg-primary: #2C3541;
+  --color-bg-secondary: #1f2832;
+  --color-accent: #00D9DD;
+  --color-accent-hover: #00CCD1;
+  --color-text-muted: #7a8a9a;
+  --color-text-body: #b0bec5;
+  --color-text-light: #cfd8dc;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --font-heading: 'Sora', sans-serif;   /* ← nuevo */
+  --font-body: 'Inter', sans-serif;      /* ← nuevo */
+}
+
+/* Aplica Sora a todos los títulos de sección automáticamente */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Highlight compartido */
+.highlight {
+  color: var(--color-accent);
+}
+
+/* Botón de scroll compartido */
+.scroll-button-down {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+.scroll-button-down:hover {
+  background: rgba(0, 217, 221, 0.2);
+  border-color: var(--color-accent);
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.scroll-button-down svg {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Ícono de skill reutilizable, reemplaza el style inline repetido en Skills.js */
+.skill-icon-img {
+  width: 1.4rem;
+  height: 1.4rem;
+  object-fit: contain;
+}

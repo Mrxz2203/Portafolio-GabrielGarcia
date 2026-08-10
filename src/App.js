@@ -1,6 +1,7 @@
 // src/App.js
 import React from 'react';
 import './App.css';
+import './components/styles/common.css'; 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
