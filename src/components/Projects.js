@@ -30,7 +30,7 @@ function Projects() {
 {
     title: "Landing Page Arsenal",
     image: "/Arsenal.png",
-    link: "https://arsenal-front.vercel.app/",
+    link: "https://arsenal0311.vercel.app/",
     description: "Proyecto inspirado en un landing page para Arsenal como hincha del club." 
   },
 {
