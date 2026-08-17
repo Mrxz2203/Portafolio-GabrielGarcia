@@ -41,6 +41,11 @@ function Skills() {
         { name: "React", icon: <img src="/react.png" alt="react" className="skill-pill-icon" /> },
         { name: "Angular", icon: <img src="/angular.png" alt="angular" className="skill-pill-icon" /> },
         { name: "HTML/CSS", icon: <img src="/html.png" alt="html" className="skill-pill-icon" /> },
+        { name: "Vue", icon: <img src="/vue.png" alt="html" className="skill-pill-icon" /> },
+        { name: "Flutter", icon: <img src="/flutter.png" alt="html" className="skill-pill-icon" /> },
+         { name: "Astro", icon: <img src="/astro.png" alt="html" className="skill-pill-icon" /> },
+          { name: "Vite", icon: <img src="/vite.png" alt="html" className="skill-pill-icon" /> },
+           { name: "Tailwind CSS", icon: <img src="/tailwind.webp" alt="html" className="skill-pill-icon" /> },
       ],
     },
     {
@@ -51,6 +56,7 @@ function Skills() {
         { name: "Java", icon: <img src="/java.png" alt="java" className="skill-pill-icon" /> },
         { name: "Python", icon: <img src="/python.png" alt="python" className="skill-pill-icon" /> },
         { name: "C#", icon: <img src="/c.png" alt="c-sharp" className="skill-pill-icon" /> },
+          { name: "FastApi", icon: <img src="/fastapi.png" alt="c-sharp" className="skill-pill-icon" /> },
       ],
     },
     {
@@ -60,6 +66,7 @@ function Skills() {
       skills: [
         { name: "SQL Server", icon: <img src="/server.png" alt="sql-server" className="skill-pill-icon" /> },
         { name: "MySQL", icon: <img src="/mysql.png" alt="mysql" className="skill-pill-icon" /> },
+         { name: "PostgreSQL", icon: <img src="/pgadmin.png" alt="mysql" className="skill-pill-icon" /> },
       ],
     },
     {
@@ -83,6 +90,19 @@ function Skills() {
         { name: "Proactividad", icon: <img src="/proactividad.png" alt="proactividad" className="skill-pill-icon" /> },
       ],
     },
+    {
+  name: "Herramientas y Plataformas Tecnológicas",
+  icon: <img src="/tools.png" alt="tools" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+  description: "Control de versiones, diseño y edición multimedia.",
+  skills: [
+    { name: "Git", icon: <img src="/git.png" alt="git" className="skill-pill-icon" /> },
+    { name: "Figma", icon: <img src="/figma.png" alt="figma" className="skill-pill-icon" /> },
+    { name: "Photoshop", icon: <img src="/photoshop.png" alt="photoshop" className="skill-pill-icon" /> },
+    { name: "WordPress", icon: <img src="/wordpress.png" alt="wordpress" className="skill-pill-icon" /> },
+    { name: "Vegas Pro", icon: <img src="/vegaspro.png" alt="vegas-pro" className="skill-pill-icon" /> },
+    { name: "After Effects", icon: <img src="/aftereffects.png" alt="after-effects" className="skill-pill-icon" /> },
+  ],
+},
   ];
 
   return (
