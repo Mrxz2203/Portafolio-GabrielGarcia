@@ -15,9 +15,9 @@ function About() {
           
           <div className="about-text">
             <p>
-              Egresado de la carrera de Ingeniería de Sistemas 
-              Computacionales, curse en la Universidad
-              Peruana de Ciencias Aplicadas, durante los periodos entre 2021 y 2026.
+              Egresado y Bachiller de la carrera de Ingeniería de Sistemas 
+              e Información, cursado en la Universidad
+              Peruana de Ciencias Aplicadas.
             </p>
             <p>
               Tengo conocimiento intermedio en el dominio de Lenguajes 

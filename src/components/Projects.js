@@ -4,7 +4,7 @@ import './Projects.css';
 function Projects() {
   const projects = [
    {
-  title: "Shimbaru - Gamag",
+  title: "Shimbaru",
   image: "/Shimbaru.png",
   link: "https://shimbaru-project.vercel.app/",
   description: "Landing page para restaurante de cocina peruana-nikkei, con galería de categorías, menú destacado y reservas vía WhatsApp."

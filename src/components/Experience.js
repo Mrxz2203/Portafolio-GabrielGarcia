@@ -66,7 +66,7 @@ function Experience() {
       duration: "3 meses y 15 días  •  Mar 2025 – Jun 2025",
       image: "/Constancia.png",
       description:
-        "Agradezco siempre a la empresa por permitirme mostrar mis habilidades y desplegar el vivir en tiempo como es las funciones de mi labor en mi carrera.Curse como practicante de ingenieria de sistemas de informacion durante 3 meses y 15 dias, en el tiempo que apoye en el proyecto mibanco usando framework AngularStudio, en base de datos a SQL, y en backend el uso de Java.Aprendi AppScript con la sintaxis de Javas para proyectos usando Excel.Tambien el dominio de Frontend y posteriores proyectos de la empresa.",
+        "Curse como practicante de ingenieria de sistemas de informacion durante 3 meses y 15 dias, en el tiempo que apoye en el proyecto mibanco usando framework Angular Studio, en base de datos a SQL, y en backend el uso de Java.Aprendi AppScript con la sintaxis de Java para proyectos usando Excel.Gracias a ello, se desarollo mi dominio en la sección Frontend y posteriores proyectos de la empresa que apoye con documentación técnica aplicando labores de TI.",
       tags: ["Angular", "Java", "SQL", "AppScript", "Excel", "Frontend"],
     },
     {
