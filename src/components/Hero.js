@@ -1,8 +1,11 @@
 // src/components/Hero.js
 import React from 'react';
 import './Hero.css';
+import useInView from '../hooks/useInView';
 
 function Hero() {
+const [textRef, textInView] = useInView();
+const [imageRef, imageInView] = useInView();
   const scrollToNext = () => {
     window.scrollTo({
       top: window.innerHeight,
@@ -14,13 +17,15 @@ function Hero() {
     <section className="hero-section" id="inicio">
       <div className="hero-content">
         {/* Parte izquierda - Texto */}
-        <div className="text-content">
+        <div className={`text-content ${textInView ? 'in-view' : ''}`} ref={textRef}>
           <h2 className="name">
             <span className="first-name">Jarold</span> Gabriel
           </h2>
           <h2 className="name">
             <span className="first-name">García</span> Cartagena
           </h2>
+          <p className="role-title">Ingeniero de Sistemas e Información</p>
+          
           
           <div className="buttons">
            <a href="https://portafolio-personal-steel-seven.vercel.app/" className="btn-primary" target="_blank" 
@@ -32,7 +37,7 @@ function Hero() {
         </div>
 
         {/* Parte derecha - Foto */}
-        <div className="image-content">
+        <div className={`image-content ${imageInView ? 'in-view' : ''}`} ref={imageRef}>
           <div className="profile-card">
             <img src="/perfil.jpg" alt="Jarold Gabriel García Cartagena" className="profile-img" />
             <div className="tech-badges">
@@ -43,10 +48,10 @@ function Hero() {
       </div>
 
       {/* Botón de scroll animado */}
-      <button className="scroll-button" onClick={scrollToNext}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path d="M12 5v14M19 12l-7 7-7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+    <button className="scroll-button" onClick={scrollToNext} aria-label="Ir a la siguiente sección">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+  <path d="M12 5v14M19 12l-7 7-7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
       </button>
 
     </section>
