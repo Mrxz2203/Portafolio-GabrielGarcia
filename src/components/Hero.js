@@ -31,7 +31,8 @@ const [imageRef, imageInView] = useInView();
            <a href="https://portafolio-personal-steel-seven.vercel.app/" className="btn-primary" target="_blank" 
            rel="noopener noreferrer">Portafolio Personal</a>
             <a href="/CV_GabrielGarcia.pdf" download className="btn-secondary">
-  Descargar CV 📥
+  Descargar CV 
+  <img src="/cv.png" alt="" width="18" height="18" style={{marginLeft: '0.5rem', verticalAlign:'middle'}}/>
 </a>
           </div>
         </div>

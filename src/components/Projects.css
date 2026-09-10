@@ -67,10 +67,31 @@
   gap: 2rem;
 }
 
+/* Animación de entrada por tarjeta (reveal-on-scroll) */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 .project-card {
   text-decoration: none;
   color: white;
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -132,6 +153,44 @@
   text-align: center;
 }
 
+.project-description {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #b0b8c4;
+  text-align: center;
+}
+
+.projects-grid.slide-next {
+  animation: slideInRight 0.4s ease;
+}
+
+.projects-grid.slide-prev {
+  animation: slideInLeft 0.4s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .projects-grid {
@@ -162,47 +221,6 @@
     gap: 2rem;
   }
 
-  .projects-grid.slide-next {
-  animation: slideInRight 0.4s ease;
-}
-
-.projects-grid.slide-prev {
-  animation: slideInLeft 0.4s ease;
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.project-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.project-description {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: #b0b8c4;
-  text-align: center;
-}
   .project-image-wrapper {
     height: 250px;
   }
