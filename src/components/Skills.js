@@ -41,11 +41,11 @@ function Skills() {
         { name: "React", icon: <img src="/react.png" alt="react" className="skill-pill-icon" /> },
         { name: "Angular", icon: <img src="/angular.png" alt="angular" className="skill-pill-icon" /> },
         { name: "HTML/CSS", icon: <img src="/html.png" alt="html" className="skill-pill-icon" /> },
-        { name: "Vue", icon: <img src="/vue.png" alt="html" className="skill-pill-icon" /> },
-        { name: "Flutter", icon: <img src="/flutter.png" alt="html" className="skill-pill-icon" /> },
-         { name: "Astro", icon: <img src="/astro.png" alt="html" className="skill-pill-icon" /> },
-          { name: "Vite", icon: <img src="/vite.png" alt="html" className="skill-pill-icon" /> },
-           { name: "Tailwind CSS", icon: <img src="/tailwind.webp" alt="html" className="skill-pill-icon" /> },
+        { name: "Vue", icon: <img src="/vue.png" alt="vue" className="skill-pill-icon" /> },
+        { name: "Flutter", icon: <img src="/flutter.png" alt="flutter" className="skill-pill-icon" /> },
+        { name: "Astro", icon: <img src="/astro.png" alt="astro" className="skill-pill-icon" /> },
+        { name: "Vite", icon: <img src="/vite.png" alt="vite" className="skill-pill-icon" /> },
+        { name: "Tailwind CSS", icon: <img src="/tailwind.webp" alt="tailwind" className="skill-pill-icon" /> },
       ],
     },
     {
@@ -56,7 +56,7 @@ function Skills() {
         { name: "Java", icon: <img src="/java.png" alt="java" className="skill-pill-icon" /> },
         { name: "Python", icon: <img src="/python.png" alt="python" className="skill-pill-icon" /> },
         { name: "C#", icon: <img src="/c.png" alt="c-sharp" className="skill-pill-icon" /> },
-          { name: "FastApi", icon: <img src="/fastapi.png" alt="c-sharp" className="skill-pill-icon" /> },
+        { name: "FastApi", icon: <img src="/fastapi.png" alt="fastapi" className="skill-pill-icon" /> },
       ],
     },
     {
@@ -66,7 +66,36 @@ function Skills() {
       skills: [
         { name: "SQL Server", icon: <img src="/server.png" alt="sql-server" className="skill-pill-icon" /> },
         { name: "MySQL", icon: <img src="/mysql.png" alt="mysql" className="skill-pill-icon" /> },
-         { name: "PostgreSQL", icon: <img src="/pgadmin.png" alt="mysql" className="skill-pill-icon" /> },
+        { name: "PostgreSQL", icon: <img src="/pgadmin.png" alt="postgresql" className="skill-pill-icon" /> },
+      ],
+    },
+    {
+      name: "DevOps y Cloud",
+      icon: <img src="/tools.png" alt="devops" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      description: "Contenedores, despliegue continuo y servicios en la nube.",
+      skills: [
+        { name: "Docker", icon: <img src="/docker.png" alt="docker" className="skill-pill-icon" /> },
+        { name: "Firebase", icon: <img src="/firebase.png" alt="firebase" className="skill-pill-icon" /> },
+        { name: "Netlify", icon: <img src="/netlify.png" alt="netlify" className="skill-pill-icon" /> },
+        { name: "Vercel", icon: <img src="/vercel.png" alt="vercel" className="skill-pill-icon" /> },
+      ],
+    },
+    {
+      name: "Testing y Soporte",
+      icon: <img src="/developer.png" alt="testing" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      description: "Pruebas automatizadas y asistencia técnica remota.",
+      skills: [
+        { name: "Selenium", icon: <img src="/selenium.png" alt="selenium" className="skill-pill-icon" /> },
+        { name: "AnyDesk", icon: <img src="/anydesk.webp" alt="anydesk" className="skill-pill-icon" /> },
+      ],
+    },
+    {
+      name: "Metodologías Ágiles",
+      icon: <img src="/developer.png" alt="agile" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      description: "Gestión de proyectos y flujos de trabajo eficientes.",
+      skills: [
+        { name: "Scrum", icon: <img src="/scrum.png" alt="scrum" className="skill-pill-icon" /> },
+        { name: "Kanban", icon: <img src="/kanban.png" alt="kanban" className="skill-pill-icon" /> },
       ],
     },
     {
@@ -91,18 +120,18 @@ function Skills() {
       ],
     },
     {
-  name: "Herramientas y Plataformas Tecnológicas",
-  icon: <img src="/tools.png" alt="tools" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
-  description: "Control de versiones, diseño y edición multimedia.",
-  skills: [
-    { name: "Git", icon: <img src="/git.png" alt="git" className="skill-pill-icon" /> },
-    { name: "Figma", icon: <img src="/figma.png" alt="figma" className="skill-pill-icon" /> },
-    { name: "Photoshop", icon: <img src="/photoshop.png" alt="photoshop" className="skill-pill-icon" /> },
-    { name: "WordPress", icon: <img src="/wordpress.png" alt="wordpress" className="skill-pill-icon" /> },
-    { name: "Vegas Pro", icon: <img src="/vegaspro.png" alt="vegas-pro" className="skill-pill-icon" /> },
-    { name: "After Effects", icon: <img src="/aftereffects.png" alt="after-effects" className="skill-pill-icon" /> },
-  ],
-},
+      name: "Herramientas y Plataformas Tecnológicas",
+      icon: <img src="/tools.png" alt="tools" style={{ width: '1.7rem', height: '1.7rem', objectFit: 'contain' }} />,
+      description: "Control de versiones, diseño y edición multimedia.",
+      skills: [
+        { name: "Git", icon: <img src="/git.png" alt="git" className="skill-pill-icon" /> },
+        { name: "Figma", icon: <img src="/figma.png" alt="figma" className="skill-pill-icon" /> },
+        { name: "Photoshop", icon: <img src="/photoshop.png" alt="photoshop" className="skill-pill-icon" /> },
+        { name: "WordPress", icon: <img src="/wordpress.png" alt="wordpress" className="skill-pill-icon" /> },
+        { name: "Vegas Pro", icon: <img src="/vegaspro.png" alt="vegas-pro" className="skill-pill-icon" /> },
+        { name: "After Effects", icon: <img src="/aftereffects.png" alt="after-effects" className="skill-pill-icon" /> },
+      ],
+    },
   ];
 
   return (
