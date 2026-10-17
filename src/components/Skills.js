@@ -75,9 +75,9 @@ function Skills() {
       description: "Contenedores, despliegue continuo y servicios en la nube.",
       skills: [
         { name: "Docker", icon: <img src="/docker.png" alt="docker" className="skill-pill-icon" /> },
-        { name: "Firebase", icon: <img src="/firebase.png" alt="firebase" className="skill-pill-icon" /> },
+        { name: "Firebase", icon: <img src="/firebase.webp" alt="firebase" className="skill-pill-icon" /> },
         { name: "Netlify", icon: <img src="/netlify.png" alt="netlify" className="skill-pill-icon" /> },
-        { name: "Vercel", icon: <img src="/vercel.png" alt="vercel" className="skill-pill-icon" /> },
+        { name: "Vercel", icon: <img src="/vercel.webp" alt="vercel" className="skill-pill-icon" /> },
       ],
     },
     {
