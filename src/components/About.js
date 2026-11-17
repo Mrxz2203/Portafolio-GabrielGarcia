@@ -14,33 +14,26 @@ function About() {
           </h2>
           
           <div className="about-text">
-            <p>
-              Egresado y Bachiller de la carrera de Ingeniería de Sistemas 
-              e Información, cursado en la Universidad
-              Peruana de Ciencias Aplicadas.
-            </p>
-            <p>
-              Tengo conocimiento intermedio en el dominio de Lenguajes 
-              como Python, C# y JavaScript.
-              En cuanto se refiere a Base de datos, domino temas
-              avanzados del SQL Lite y SQL Server. 
-            </p>
-            <p>
-              Soy desarrollador de sitios webs en HTML usando Angular 
-              Studio, React, Vue en desarrollo de aplicaciones web y movil.
-              Asimismo, poseo experiencia como practicante preprofesional de Ingenieria 
-              de Sistemas
-              en la empresa GM Ingenierios y Consultores SAC.
-            </p>
-            <p>
-              Por otro lado cuento con habilidades de liderazgo, 
-              proactividad y perseverancia para las situaciones laborales 
-              como sistemáticas en las que me encuentro. Por ello, estoy 
-              buscando oportunidades en un entorno laboral dinámico y 
-              enriquecedor que permita desarrollarme para ser un gran 
-              profesional.
-            </p>
-          </div>
+  <p>
+    Egresado y Bachiller de la carrera de Ingeniería de Sistemas e
+    Información por la Universidad Peruana de Ciencias Aplicadas.
+  </p>
+  <p>
+    Tengo conocimiento intermedio en lenguajes como Python, C# y
+    JavaScript. En bases de datos, domino temas avanzados de SQLite
+    y SQL Server.
+  </p>
+  <p>
+    Desarrollo aplicaciones web y móviles con Angular, React y Vue.
+    También trabajo en automatización de procesos con n8n y en flujos
+    de datos (ETL) con Python y SQL. 
+  </p>
+  <p>
+    Cuento con habilidades de liderazgo, proactividad y perseverancia.
+    Busco oportunidades en un entorno laboral dinámico y enriquecedor
+    que me permita desarrollarme como un gran profesional.
+  </p>
+</div>
         </div>
 
         {/* Ilustración */}

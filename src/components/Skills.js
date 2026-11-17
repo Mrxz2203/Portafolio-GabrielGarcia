@@ -87,6 +87,8 @@ function Skills() {
       skills: [
         { name: "Selenium", icon: <img src="/selenium.png" alt="selenium" className="skill-pill-icon" /> },
         { name: "AnyDesk", icon: <img src="/anydesk.webp" alt="anydesk" className="skill-pill-icon" /> },
+      { name: "Jira", icon: <img src="/Jira.webp" alt="Jira" className="skill-pill-icon" /> },
+      { name: "Gitlab", icon: <img src="/Gitlab.webp" alt="Gitlab" className="skill-pill-icon" /> },
       ],
     },
     {
@@ -107,6 +109,7 @@ function Skills() {
         { name: "Word", icon: <img src="/word.png" alt="word" className="skill-pill-icon" /> },
         { name: "PowerPoint", icon: <img src="/powerpoint.png" alt="powerpoint" className="skill-pill-icon" /> },
         { name: "AppScript", icon: <img src="/script.png" alt="appscript" className="skill-pill-icon" /> },
+      
       ],
     },
     {
