@@ -20,18 +20,18 @@ function About() {
   </p>
   <p>
     Tengo conocimiento intermedio en lenguajes como Python, C# y
-    JavaScript. En bases de datos, domino temas avanzados de SQLite
+    JavaScript. En bases de datos, domino temas avanzados en SQLite, PostgreSQL
     y SQL Server.
   </p>
   <p>
-    Desarrollo aplicaciones web y móviles con Angular, React y Vue.
-    También trabajo en automatización de procesos con n8n y en flujos
-    de datos (ETL) con Python y SQL. 
+    Desarrollo aplicaciones web y móviles con Angular, React, Flutter, Astro y Vue.
+    También trabajo en automatización de procesos, Web Scraping con n8n y en flujos
+    de datos (ETL) con Python, HTML y SQL. 
   </p>
   <p>
     Cuento con habilidades de liderazgo, proactividad y perseverancia.
-    Busco oportunidades en un entorno laboral dinámico y enriquecedor
-    que me permita desarrollarme como un gran profesional.
+    Busco oportunidades en un entorno laboral dinámico y constante
+    que me permita desarrollarme como Ingeniero de Sistemas.
   </p>
 </div>
         </div>

@@ -88,7 +88,7 @@ function Skills() {
         { name: "Selenium", icon: <img src="/selenium.png" alt="selenium" className="skill-pill-icon" /> },
         { name: "AnyDesk", icon: <img src="/anydesk.webp" alt="anydesk" className="skill-pill-icon" /> },
       { name: "Jira", icon: <img src="/Jira.webp" alt="Jira" className="skill-pill-icon" /> },
-      { name: "Gitlab", icon: <img src="/Gitlab.webp" alt="Gitlab" className="skill-pill-icon" /> },
+      { name: "Gitlab", icon: <img src="/gitlab.webp" alt="Gitlab" className="skill-pill-icon" /> },
       ],
     },
     {

@@ -59,7 +59,7 @@ function ExpCard({ exp, index }) {
 function Experience() {
   const experiences = [
     {
-      company: "GM Ingenieros y Consultores",
+      company: "GM Ingenieros y Consultores S.A.C.",
       role: "Practicante de Ingeniería de Sistemas",
       logo: <img src="/Logo.png" alt="GM Ingenieros y Consultores" style={{ width: '2rem', height: '2rem', objectFit: 'contain' }} />,
       badge: "Híbrida",
@@ -91,7 +91,7 @@ function Experience() {
           <h2 className="experience-title">
             Mi <span className="highlight">Experiencia</span>
           </h2>
-          <p className="experience-subtitle">Prácticas pre-profesionales</p>
+          <p className="experience-subtitle">Prácticas Pre-Profesionales</p>
         </div>
 
         {/* Tarjetas */}

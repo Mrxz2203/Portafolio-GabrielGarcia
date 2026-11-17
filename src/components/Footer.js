@@ -83,8 +83,7 @@ function Footer() {
         </div>
 
         <p className="footer-contact-description">
-          Estoy buscando oportunidades para poder desarrollarme como Ingeniero de Sistemas de Información.
-          Siempre estaré dispuesto a colaborar con el crecimiento de la empresa.
+          Siempre estaré dispuesto  a dar lo mejor de mi persona por contribuir al crecimiento de la organización.
         </p>
 
         {/* Tarjetas de contacto */}
